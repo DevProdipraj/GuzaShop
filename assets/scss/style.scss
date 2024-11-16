@@ -1,0 +1,351 @@
+// import all partials 
+@import './partials/reset.scss';
+@import './partials/mixin';
+@import './partials/typogaphy';
+
+// common class 
+.section_padding {
+    padding: 4rem 0rem;
+}
+
+// color variable
+$black : #000;
+
+
+// header section css 
+.main_nav {
+    @extend .content_center;
+    justify-content: space-between;
+    padding: 25px 0px;
+}
+
+.header_account a span {
+    margin: 0 5px;
+}
+
+.header_account a span:last-child {
+    margin-right: 0px;
+}
+
+#menu {
+    @extend .content_center;
+
+    li {
+        padding: 0px 20px;
+        @include font_size(normal);
+
+        a {
+            @include text_color(primary)
+        }
+    }
+}
+
+
+// hero area section css start 
+.hero_area {
+    height: 90vh;
+    width: 100%;
+    background: #111111;
+    background-image: url(../img/index_page/banner.png);
+    background-position: right top;
+    background-size: contain;
+    background-repeat: no-repeat;
+}
+
+.hero_content {
+    margin-top: 50%;
+    transform: translateY(-50%);
+    text-align: center;
+}
+
+.hero_content h4 {
+    @include font_size(normal);
+    @include text_color(secoundary);
+}
+
+.hero_content h1 {
+    @include text_color(secoundary);
+    @include font_size(big);
+    font-family: 'Cormorant Garamond', serif;
+    font-weight: 400;
+}
+
+.hero_content p {
+    @include text_color(secoundary);
+    @include font_size(normal);
+
+}
+
+
+
+// category section css 
+.our_category_header {
+    h1 {
+        @extend .title_text;
+    }
+}
+
+.our_category_body {
+    @extend .content_center;
+    justify-content: center;
+    margin-top: 2rem;
+
+    .Modern,
+    .classic,
+    .Electric {
+        margin: 0rem 2rem;
+        transition: all 0.3s linear;
+        cursor: pointer;
+        overflow: hidden;
+
+        .classic_img,
+        .mordern_img,
+        .electric_img {
+            overflow: hidden;
+
+            img {
+                transition: all 0.3s linear;
+                cursor: pointer;
+            }
+
+            img:hover {
+                transform: scale(1.2);
+            }
+        }
+
+        position: relative;
+        text-align: center;
+    }
+
+    .Modern p,
+    .classic p,
+    .Electric p {
+        @include font_size(normal);
+        @include text_color(black);
+        padding-top: 10px;
+        border-bottom: 1px solid #111111;
+        color: #111111;
+        display: inline-block;
+    }
+}
+
+
+
+// our watch category section css start 
+.w-cate {
+    @extend .content_center;
+}
+
+.our_watch_header {
+    h1 {
+        @extend .title_text;
+        // text-align: center;
+    }
+
+}
+
+.box_tabs_july {
+    display: flex;
+    align-items: center;
+    justify-content: center !important;
+    margin-top: 40px;
+
+    .july_tab_btn {
+        border: 1px solid $black ;
+        color: $black;
+        border-radius: 5px;
+        transition: all 0.3s linear;
+    }
+
+    .july_tab_btn:hover {
+        background: $black;
+        color: #fff;
+    }
+
+}
+
+
+
+// elegant watch section css
+.elegant {
+    height: 60vh;
+
+    .elegant_text {
+        text-align: center;
+        margin-top: 50%;
+        transform: translateY(-50%);
+
+        h4 {
+            @include font_size(normal);
+        }
+
+        h2 {
+            @extend .title_text;
+            margin: 0px 0px 15px 0px;
+        }
+
+        p {
+            color: $black;
+            @include font_size(normal);
+        }
+
+        .elegant_btn {
+            @include text_color(black);
+            border: 1px solid $black;
+            transition: all 0.3s linear;
+
+        }
+
+        .elegant_btn:hover {
+            background: $black;
+            @include text_color(secoundary);
+        }
+    }
+
+    .elegant_watch_img {
+        padding: 3rem 2rem;
+        cursor: pointer;
+
+        .elegant_img_box {
+            overflow: hidden;
+
+            img {
+                transition: all 0.3s linear;
+            }
+
+            img:hover {
+                transform: scale(1.2);
+            }
+        }
+    }
+
+}
+
+
+// history css
+.history {
+
+    .history_imgs {
+        margin-right: 3.5rem;
+
+        .history_img_box {
+            overflow: hidden;
+            cursor: pointer;
+
+            img {
+                transition: all 0.3s linear;
+
+            }
+
+            img:hover {
+                transform: scale(1.2);
+            }
+        }
+
+    }
+
+    .history_text_box {
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        height: 100%;
+        background-image: url(../img/index_page/history/bg-watch.png);
+        background-repeat: no-repeat;
+        background-size: contain;
+        background-position: center right;
+
+        .history_text {
+            text-align: center;
+
+            h2 {
+                @extend .title_text;
+            }
+
+            p {
+                text-align: justify;
+                width: 70%;
+                margin: 0 auto;
+            }
+
+            input[type=button] {
+                border: 1px solid $black;
+                color: $black;
+                transition: all 0.3s linear;
+            }
+
+            input[type=button]:hover {
+                background: $black;
+                @include text_color(secoundary);
+            }
+        }
+    }
+}
+
+
+// brand section css 
+.brand_list {
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+    flex-wrap: wrap;
+
+    .brand_item img {
+        transition: all 0.3s linear;
+    }
+
+    .brand_item img:hover {
+        transform: scale(1.2);
+    }
+}
+
+// instagrap section css 
+.instagram_item{
+    width: 20%;
+    
+}
+.instagram_item a img{
+    transition: all 0.3s linear;
+    width: 100%;
+}
+.instagram_item a img:hover{
+    transform: scale(1.1);
+}
+
+
+
+// subsribe section css start 
+.sub_info{
+    position: relative;
+    display: inline-block;
+    h4{
+        @include font_size(normal);
+    }
+    h2{
+        width: 75%;
+        margin: 0 auto;
+        @include font_size(xl);
+    }
+    form{
+        border-bottom: 1px solid #000;
+        margin-bottom: 1rem;
+        position: relative;
+        display: inline-block;
+
+        input[type=email]{
+            width: 70%;
+            padding: 5px 10px;
+        }
+        .subs_btn{
+            border: 1px solid $black;
+            color: $black;
+            transition: all 0.3s  linear;
+        }
+        .subs_btn:hover{
+            background: $black;
+            color: #fff;
+        }
+    }
+ 
+}
+
+ 

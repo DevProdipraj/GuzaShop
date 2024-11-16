@@ -1,0 +1,31 @@
+
+@import url('https://fonts.googleapis.com/css2?family=Cormorant+Garamond:wght@300;400;500;600&family=Jost:wght@300;400;500&display=swap');
+
+// for content center 
+ .content_center{
+    display: flex;
+    align-items: center;
+}
+
+// common btn 
+
+.common_btn {
+    border: 1px solid #fff;
+    padding: 7px 25px;
+   @include font_size(normal);
+   @include text_color(secoundary);
+    margin-top:10px;
+    transition: all 0.5s linear;
+    border-radius: 5px;
+}
+.common_btn:hover{
+    @include text_color(black);
+    background: #fff;
+}
+
+.title_text{
+    @include font_size(xxl);
+    @include text_color(primary);
+    font-family: 'Cormorant Garamond', serif;
+    text-align: center;
+}

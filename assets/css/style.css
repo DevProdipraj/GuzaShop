@@ -1,0 +1,331 @@
+@import url("https://fonts.googleapis.com/css2?family=Jost:wght@300;400;500&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Cormorant+Garamond:wght@300;400;500;600&family=Jost:wght@300;400;500&display=swap");
+* {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+  outline: none;
+  list-style-type: none;
+  text-decoration: none;
+  font-family: "Jost", sans-serif;
+}
+
+ul {
+  margin-bottom: 0;
+}
+
+p {
+  margin-bottom: 0;
+}
+
+a {
+  text-decoration: none;
+  color: #000;
+}
+
+.container-fluid {
+  max-width: 1920px;
+}
+
+.content_center, .w-cate, .our_category_body, #menu, .main_nav {
+  display: flex;
+  align-items: center;
+}
+
+.common_btn {
+  border: 1px solid #fff;
+  padding: 7px 25px;
+  font-size: 18px;
+  color: #fff;
+  margin-top: 10px;
+  transition: all 0.5s linear;
+  border-radius: 5px;
+}
+
+.common_btn:hover {
+  color: #000;
+  background: #fff;
+}
+
+.title_text, .history .history_text_box .history_text h2, .elegant .elegant_text h2, .our_watch_header h1, .our_category_header h1 {
+  font-size: 46px;
+  color: #271111;
+  font-family: "Cormorant Garamond", serif;
+  text-align: center;
+}
+
+.section_padding {
+  padding: 4rem 0rem;
+}
+
+.main_nav {
+  justify-content: space-between;
+  padding: 25px 0px;
+}
+
+.header_account a span {
+  margin: 0 5px;
+}
+
+.header_account a span:last-child {
+  margin-right: 0px;
+}
+
+#menu li {
+  padding: 0px 20px;
+  font-size: 18px;
+}
+#menu li a {
+  color: #271111;
+}
+
+.hero_area {
+  height: 90vh;
+  width: 100%;
+  background: #111111;
+  background-image: url(../img/index_page/banner.png);
+  background-position: right top;
+  background-size: contain;
+  background-repeat: no-repeat;
+}
+
+.hero_content {
+  margin-top: 50%;
+  transform: translateY(-50%);
+  text-align: center;
+}
+
+.hero_content h4 {
+  font-size: 18px;
+  color: #fff;
+}
+
+.hero_content h1 {
+  color: #fff;
+  font-size: 68px;
+  font-family: "Cormorant Garamond", serif;
+  font-weight: 400;
+}
+
+.hero_content p {
+  color: #fff;
+  font-size: 18px;
+}
+
+.our_category_body {
+  justify-content: center;
+  margin-top: 2rem;
+}
+.our_category_body .Modern,
+.our_category_body .classic,
+.our_category_body .Electric {
+  margin: 0rem 2rem;
+  transition: all 0.3s linear;
+  cursor: pointer;
+  overflow: hidden;
+  position: relative;
+  text-align: center;
+}
+.our_category_body .Modern .classic_img,
+.our_category_body .Modern .mordern_img,
+.our_category_body .Modern .electric_img,
+.our_category_body .classic .classic_img,
+.our_category_body .classic .mordern_img,
+.our_category_body .classic .electric_img,
+.our_category_body .Electric .classic_img,
+.our_category_body .Electric .mordern_img,
+.our_category_body .Electric .electric_img {
+  overflow: hidden;
+}
+.our_category_body .Modern .classic_img img,
+.our_category_body .Modern .mordern_img img,
+.our_category_body .Modern .electric_img img,
+.our_category_body .classic .classic_img img,
+.our_category_body .classic .mordern_img img,
+.our_category_body .classic .electric_img img,
+.our_category_body .Electric .classic_img img,
+.our_category_body .Electric .mordern_img img,
+.our_category_body .Electric .electric_img img {
+  transition: all 0.3s linear;
+  cursor: pointer;
+}
+.our_category_body .Modern .classic_img img:hover,
+.our_category_body .Modern .mordern_img img:hover,
+.our_category_body .Modern .electric_img img:hover,
+.our_category_body .classic .classic_img img:hover,
+.our_category_body .classic .mordern_img img:hover,
+.our_category_body .classic .electric_img img:hover,
+.our_category_body .Electric .classic_img img:hover,
+.our_category_body .Electric .mordern_img img:hover,
+.our_category_body .Electric .electric_img img:hover {
+  transform: scale(1.2);
+}
+.our_category_body .Modern p,
+.our_category_body .classic p,
+.our_category_body .Electric p {
+  font-size: 18px;
+  color: #000;
+  padding-top: 10px;
+  border-bottom: 1px solid #111111;
+  color: #111111;
+  display: inline-block;
+}
+
+.box_tabs_july {
+  display: flex;
+  align-items: center;
+  justify-content: center !important;
+  margin-top: 40px;
+}
+.box_tabs_july .july_tab_btn {
+  border: 1px solid #000;
+  color: #000;
+  border-radius: 5px;
+  transition: all 0.3s linear;
+}
+.box_tabs_july .july_tab_btn:hover {
+  background: #000;
+  color: #fff;
+}
+
+.elegant {
+  height: 60vh;
+}
+.elegant .elegant_text {
+  text-align: center;
+  margin-top: 50%;
+  transform: translateY(-50%);
+}
+.elegant .elegant_text h4 {
+  font-size: 18px;
+}
+.elegant .elegant_text h2 {
+  margin: 0px 0px 15px 0px;
+}
+.elegant .elegant_text p {
+  color: #000;
+  font-size: 18px;
+}
+.elegant .elegant_text .elegant_btn {
+  color: #000;
+  border: 1px solid #000;
+  transition: all 0.3s linear;
+}
+.elegant .elegant_text .elegant_btn:hover {
+  background: #000;
+  color: #fff;
+}
+.elegant .elegant_watch_img {
+  padding: 3rem 2rem;
+  cursor: pointer;
+}
+.elegant .elegant_watch_img .elegant_img_box {
+  overflow: hidden;
+}
+.elegant .elegant_watch_img .elegant_img_box img {
+  transition: all 0.3s linear;
+}
+.elegant .elegant_watch_img .elegant_img_box img:hover {
+  transform: scale(1.2);
+}
+
+.history .history_imgs {
+  margin-right: 3.5rem;
+}
+.history .history_imgs .history_img_box {
+  overflow: hidden;
+  cursor: pointer;
+}
+.history .history_imgs .history_img_box img {
+  transition: all 0.3s linear;
+}
+.history .history_imgs .history_img_box img:hover {
+  transform: scale(1.2);
+}
+.history .history_text_box {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  height: 100%;
+  background-image: url(../img/index_page/history/bg-watch.png);
+  background-repeat: no-repeat;
+  background-size: contain;
+  background-position: center right;
+}
+.history .history_text_box .history_text {
+  text-align: center;
+}
+.history .history_text_box .history_text p {
+  text-align: justify;
+  width: 70%;
+  margin: 0 auto;
+}
+.history .history_text_box .history_text input[type=button] {
+  border: 1px solid #000;
+  color: #000;
+  transition: all 0.3s linear;
+}
+.history .history_text_box .history_text input[type=button]:hover {
+  background: #000;
+  color: #fff;
+}
+
+.brand_list {
+  display: flex;
+  align-items: center;
+  justify-content: space-around;
+  flex-wrap: wrap;
+}
+.brand_list .brand_item img {
+  transition: all 0.3s linear;
+}
+.brand_list .brand_item img:hover {
+  transform: scale(1.2);
+}
+
+.instagram_item {
+  width: 20%;
+}
+
+.instagram_item a img {
+  transition: all 0.3s linear;
+  width: 100%;
+}
+
+.instagram_item a img:hover {
+  transform: scale(1.1);
+}
+
+.sub_info {
+  position: relative;
+  display: inline-block;
+}
+.sub_info h4 {
+  font-size: 18px;
+}
+.sub_info h2 {
+  width: 75%;
+  margin: 0 auto;
+  font-size: 36px;
+}
+.sub_info form {
+  border-bottom: 1px solid #000;
+  margin-bottom: 1rem;
+  position: relative;
+  display: inline-block;
+}
+.sub_info form input[type=email] {
+  width: 70%;
+  padding: 5px 10px;
+}
+.sub_info form .subs_btn {
+  border: 1px solid #000;
+  color: #000;
+  transition: all 0.3s linear;
+}
+.sub_info form .subs_btn:hover {
+  background: #000;
+  color: #fff;
+}
+
+/*# sourceMappingURL=style.css.map */

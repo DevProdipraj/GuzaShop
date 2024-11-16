@@ -1,0 +1,54 @@
+
+// mixin for color
+@mixin text_color ($value){
+    @if($value == primary){
+        color: #271111;
+    }
+    @else if ($value == secoundary){
+        color: #fff;
+    }
+    @else if ($value == danger){
+        color: #ED0006;
+    }
+    @else if($value == black){
+        color: #000;
+    }
+    @else{
+        color: aqua;
+    }
+}
+
+// mixin for font size 
+
+@mixin font_size ($value){
+    @if($value == small){
+        font-size: 14px;
+    }
+    @else if ($value == normal){
+        font-size: 18px;
+    }
+    @else if ($value == medium){
+        font-size: 26px;
+    }
+    @else if ($value == xl){
+        font-size: 36px;
+    }
+    @else if ($value == xxl){
+        font-size: 46px;
+    }
+    @else if ($value == big){
+        font-size: 68px;
+    }
+    @else {
+        font-size: 16px;
+    }
+}
+
+
+
+
+
+
+
+
+
